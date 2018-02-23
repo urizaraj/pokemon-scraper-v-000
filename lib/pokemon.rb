@@ -21,6 +21,11 @@ class Pokemon
 
   def self.find(id, db)
     res = db.execute('SELECT name, type FROM pokemon WHERE id = ?', id)
-    puts res
+    puts
+    puts
+    puts
+    print res
+    puts
+    puts
   end
 end
