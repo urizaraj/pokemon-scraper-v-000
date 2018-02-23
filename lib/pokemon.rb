@@ -25,7 +25,7 @@ class Pokemon
     new(name:name, type: type, db: db, id: id, hp: hp)
   end
 
-  def alter_hp(power)
+  def alter_hp(power, db)
     hp = power
     db.execute('UPDATE pokemon SET hp = ? WHERE id = ?', self.hp, self.id)
   end
