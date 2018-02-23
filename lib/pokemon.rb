@@ -23,4 +23,8 @@ class Pokemon
     id, name, type, hp = db.execute('SELECT * FROM pokemon WHERE id = ?', id)[0]
     new(name:name, type: type, db: db, id: id, hp: hp)
   end
+
+  def alter_hp(power)
+    
+  end
 end
