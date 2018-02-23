@@ -12,6 +12,7 @@ class Pokemon
     self.type = type
     self.db = db
     self.id = id
+    self.hp = hp
     self.class.all << self
   end
 
