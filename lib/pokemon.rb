@@ -7,7 +7,7 @@ class Pokemon
     @@all
   end
 
-  def initialize(name: nil, type: nil, db: nil, id: nil)
+  def initialize(name: nil, type: nil, db: nil, id: nil, hp: nil)
     self.name = name
     self.type = type
     self.db = db
